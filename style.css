@@ -33,13 +33,13 @@ body {
 
   .swiper-slide .imgBox {
       width: 100%;
-      height: auto;
+      height: 200px;
       overflow: hidden;
   }
 
   .swiper-slide .imgBox img {
-      /*height: auto;*/
       width: 100%;
+      height: auto;
   }
 
   .swiper-slide .details {
