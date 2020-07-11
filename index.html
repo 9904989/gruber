@@ -1,108 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <title>Gruber</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-    <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 
-    <title>Gruber</title>
+  <!-- styles -->
+  <style>
+    body {
+        background: #262626;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        /*min-height: 100vh;*/
+    }
+
+    .logo-text {
+        color: #fff;
+        margin-left: 10px;
+    } 
+
+    .swiper-container {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        background-color: #fff;
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        /*-webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);*/
+    }
+
+    .swiper-slide .imgBox {
+        width: 300px;
+        height: 75%;
+        overflow: hidden;
+    }
+    
+    .swiper-slide .details {
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .swiper-slide .details h3 {
+        /*font-size: 20px;*/
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .swiper-slide .details h3 span {
+        /*font-size: 16px;*/
+        color: #f44336;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        border: white solid 1px;
+        background-color: grey;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: white;
+    }
+  </style>
 </head>
+
 <body>
-    <!--<div class="logo"><img src="gruber.png"></div>-->
+    <!-- Header -->
     <div><h2 class="logo-text">Gruber</h2></div>
 
-      <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" onclick="alert('Bring me chillies!!')">
-            <div class="imgBox">
-                <img src="tic3.jpg">
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-slide imgBox" style="background-image:url(rhcp.jpg)"></div>          
+                <div class="details">
+                    <h3>Red Hot Chilli Peppers<br><span>Murrayfield Stadium 2004</span></h3>
+                </div>
             </div>
-            <div class="details">
-                <h3>Red Hot Chilli Peppers<br><span>Murrayfield Stadium 2004</span></h3>
+            <div class="swiper-slide">
+                <div class="swiper-slide imgBox" style="background-image:url(bubby.png)"></div>          
+                <div class="details">
+                    <h3>Ellis<br><span>Nakatomi Plaza</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide imgBox" style="background-image:url(img1.jpg)"></div>          
+                <div class="details">
+                    <h3><br><span></span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide imgBox" style="background-image:url(img2.jpg)"></div>          
+                <div class="details">
+                    <h3><br><span></span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide imgBox" style="background-image:url(img3.jpg)"></div>          
+                <div class="details">
+                    <h3><br><span></span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide imgBox" style="background-image:url(img4.jpg)"></div>          
+                <div class="details">
+                    <h3><br><span></span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide imgBox" style="background-image:url(hans.png)"></div>          
+                <div class="details">
+                    <h3>Thomas Claye<br><span>Shoot the glass!</span></h3>
+                </div>
+            </div>
+            <!--<div class="swiper-slide" style="background-image:url(img2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(hans.png)"></div>-->
+            <div class="swiper-slide">
+                <div class="swiper-slide imgBox" style="background-image:url(img6.jpg)"></div>          
+                <div class="details">
+                    <h3>Stereophonics<br><span>AECC 2001</span></h3>
+                </div>
             </div>
         </div>
-        <div class="swiper-slide">
-            <div class="imgBox">
-                <img src="tic2.jpg">
-            </div>
-            <div class="details">
-                <h3>Stereophonics<br><span>AECC 1999</span></h3>
-            </div>
-        </div>
-        <!--<div class="swiper-slide" onclick="alert('Cute little kitty')">
-            <div class="imgBox">
-                <img src="http://placekitten.com/200/200">
-            </div>
-            <div class="details">
-                <h3>Hairy McLairy<br><span>Web Designer</span></h3>
-            </div>
-        </div>-->
-        <div class="swiper-slide">
-            <div class="imgBox">
-                <img src="img1.jpg">
-            </div>
-            <div class="details">
-                <h3>Hairy Baas<br><span>Web Slinger</span></h3>
-            </div>
-        </div>
-      <div class="swiper-slide">
-          <div class="imgBox">
-              <img src="img2.jpg">
-          </div>
-          <div class="details">
-              <h3>Hairy McLairy<br><span>Web Designer</span></h3>
-          </div>
-      </div>
-      <div class="swiper-slide">
-          <div class="imgBox">
-              <img src="img3.jpg">
-          </div>
-          <div class="details">
-              <h3>Hairy McLairy<br><span>Web Designer</span></h3>
-          </div>
-      </div>
-      <div class="swiper-slide">
-          <div class="imgBox">
-              <img src="img4.jpg">
-          </div>
-          <div class="details">
-              <h3>Hairy McLairy<br><span>Web Designer</span></h3>
-          </div>
-      </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- Initialize Swiper -->
-  <script>
-    const swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        //rotate: 50,
-        //stretch: 0,
-        //depth: 100,
-        //modifier: 1,
-        rotate: 60,
-        stretch: 0,
-        depth: 200,
-        modifier: 2,
-        slideShadows: true
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  </script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 2,
+            slideShadows: true,
+        },
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+
+    /* launch modal when slide is clicked */
+    document.body.onclick= function(e){
+        e=window.event? event.srcElement: e.target;
+        if(e.className && e.className.indexOf('swiper-slide')!=-1)alert('Show band stuff, set lists etc. \n\nComing Soon...');
+    }
+    </script>
 </body>
+
 </html>
