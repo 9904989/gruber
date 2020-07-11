@@ -7,10 +7,10 @@ body {
     padding: 0;
   }
 
-.logo img {
+/*.logo img {
     width: 100px;
     height: auto;
-}
+}*/
 
 .logo-text {
     color: #fff;
@@ -19,9 +19,9 @@ body {
 
   .swiper-container {
     width: 100%;
-    /*padding-top: 50px;*/
-    padding-bottom: 50px;
-  }
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
+ }
 
   .swiper-slide {
     background-position: center;
@@ -29,6 +29,7 @@ body {
     width: 300px;
     height: 280px;
     background: #fff;
+    margin: 20px;
   }
 
   .swiper-slide .imgBox {
@@ -61,8 +62,8 @@ body {
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-    /*opacity: 1;
-    border: white solid 1px;*/
+    /*opacity: 1;*/
+    border: white solid 1px;
     background-color: grey;
 }
 
